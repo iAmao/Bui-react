@@ -1,16 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './style.css';
-
-
-const Drawer = (props) => {
-    return props.isOpen &&
-        <div id="bui-react-sidebar-container">
-            <div id="bui-react-sidebar" >
-                {props.children} 
+/**
+ * Drawer component
+ */
+function Drawer (props) {
+    if (props.isOpen) {
+       return (
+            <div id="bui-react-sidebar-container">
+                <div id="bui-react-sidebar" >
+                    {props.children} 
+                </div>
             </div>
-        </div>
+       )
+    }
+    return  <div />
 };
 
 Drawer.defaultProps = {

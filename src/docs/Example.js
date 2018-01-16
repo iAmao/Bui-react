@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { autobind } from 'core-decorators';
+
 import Snippet from './Snippet';
 
 
@@ -10,7 +12,7 @@ class Example extends React.Component {
         this.state = { showCode: false };
     }
 
-    toggleCode(event) {
+    @autobind toggleCode(event) {
         event.preventDefault();
         this.setState((prevState) => ({
             showCode: !prevState.showCode
@@ -29,7 +31,7 @@ class Example extends React.Component {
                 <ExampleComponent />
 
                 <p>
-                    <a href="#" onClick={this.toggleCode.bind(this)}>
+                    <a href="#" onClick={this.toggleCode}>
                         {showCode ? "Hide": "show"} Code
                     </a>
                 </p>
