@@ -1,0 +1,13 @@
+#bui-react-sidebar-container {
+    position: relative;
+}    
+
+#bui-react-sidebar {
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px #EFEFEF;
+}
