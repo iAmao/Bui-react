@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOCS: Component Snapshot Test renders component with examples alone 1`] = `
+<div
+  id="bui-react-docs-component-container"
+>
+  <h2
+    id="bui-react-docs-component-name"
+  >
+    Button
+  </h2>
+  <p
+    id="bui-react-docs-component-description"
+  >
+    Button Component
+  </p>
+  <h3
+    id="bui-react-docs-component-example-header"
+  >
+    Example
+  </h3>
+  <div
+    id="bui-react-docs-component-example-container"
+  >
+    <h4
+      id="bui-react-docs-component-example-description"
+    >
+      Default Button component
+    </h4>
+    <button>
+      Hello!
+    </button>
+    <p
+      id="bui-react-docs-component-example-code"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </a>
+    </p>
+  </div>
+  <h3
+    id="bui-react-docs-component-props-header"
+  >
+    Props
+  </h3>
+  This component accepts no props
+</div>
+`;
+
+exports[`DOCS: Component Snapshot Test renders component with props alone 1`] = `
+<div
+  id="bui-react-docs-component-container"
+>
+  <h2
+    id="bui-react-docs-component-name"
+  >
+    Button
+  </h2>
+  <p
+    id="bui-react-docs-component-description"
+  >
+    Button Component
+  </p>
+  <h3
+    id="bui-react-docs-component-example-header"
+  >
+    Example
+  </h3>
+  No examples yet
+  <h3
+    id="bui-react-docs-component-props-header"
+  >
+    Props
+  </h3>
+  <div
+    id="bui-react-docs-component-props-container"
+  >
+    <table
+      className="props"
+    >
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Type
+          </th>
+          <th>
+            Default
+          </th>
+          <th>
+            Required
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            children
+          </td>
+          <td>
+            Child elements for the button component
+          </td>
+          <td>
+            node
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            onClick
+          </td>
+          <td>
+            
+          </td>
+          <td>
+            func
+          </td>
+          <td />
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`DOCS: Component Snapshot Test renders component with props and examples 1`] = `
+<div
+  id="bui-react-docs-component-container"
+>
+  <h2
+    id="bui-react-docs-component-name"
+  >
+    Button
+  </h2>
+  <p
+    id="bui-react-docs-component-description"
+  >
+    Button Component
+  </p>
+  <h3
+    id="bui-react-docs-component-example-header"
+  >
+    Example
+  </h3>
+  <div
+    id="bui-react-docs-component-example-container"
+  >
+    <h4
+      id="bui-react-docs-component-example-description"
+    >
+      Default Button component
+    </h4>
+    <button>
+      Hello!
+    </button>
+    <p
+      id="bui-react-docs-component-example-code"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </a>
+    </p>
+  </div>
+  <h3
+    id="bui-react-docs-component-props-header"
+  >
+    Props
+  </h3>
+  <div
+    id="bui-react-docs-component-props-container"
+  >
+    <table
+      className="props"
+    >
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Type
+          </th>
+          <th>
+            Default
+          </th>
+          <th>
+            Required
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            children
+          </td>
+          <td>
+            Child elements for the button component
+          </td>
+          <td>
+            node
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            onClick
+          </td>
+          <td>
+            
+          </td>
+          <td>
+            func
+          </td>
+          <td />
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`DOCS: Component Snapshot Test renders component without props and examples 1`] = `
+<div
+  id="bui-react-docs-component-container"
+>
+  <h2
+    id="bui-react-docs-component-name"
+  >
+    Button
+  </h2>
+  <p
+    id="bui-react-docs-component-description"
+  >
+    Button Component
+  </p>
+  <h3
+    id="bui-react-docs-component-example-header"
+  >
+    Example
+  </h3>
+  No examples yet
+  <h3
+    id="bui-react-docs-component-props-header"
+  >
+    Props
+  </h3>
+  This component accepts no props
+</div>
+`;

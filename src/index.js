@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Docs from './docs/Docs';
-import '../node_modules/highlight.js/styles/ocean.css'
-import './styles/flexbox.css';
+
+import App from './docs/App';
+
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Docs />, document.getElementById('root'));
+import './index.css';
+import '../node_modules/highlight.js/styles/grayscale.css'
+import './styles/flexbox.css';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

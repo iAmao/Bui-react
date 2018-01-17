@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Docs:Example Snapshot Test renders component with description 1`] = `
+<div
+  id="bui-react-docs-component-example-container"
+>
+  <h4
+    id="bui-react-docs-component-example-description"
+  >
+    Default Button component
+  </h4>
+  <button>
+    Hello!
+  </button>
+  <p
+    id="bui-react-docs-component-example-code"
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+    >
+      show
+       Code
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Docs:Example Snapshot Test renders component without description 1`] = `
+<div
+  id="bui-react-docs-component-example-container"
+>
+  <h4
+    id="bui-react-docs-component-example-description"
+  >
+    Default Button component
+  </h4>
+  <button>
+    Hello!
+  </button>
+  <p
+    id="bui-react-docs-component-example-code"
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+    >
+      show
+       Code
+    </a>
+  </p>
+</div>
+`;

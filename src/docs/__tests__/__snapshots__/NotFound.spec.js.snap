@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOCS: NotFound Snapshot Test renders a 404 message on page 1`] = `
+<div
+  id="bui-react-docs-component-not-found"
+>
+  <h3>
+    404!
+  </h3>
+</div>
+`;
