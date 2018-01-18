@@ -1,1 +1,2 @@
-### BUI React
+### BUI React]
+The React component Library
