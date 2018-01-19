@@ -24,16 +24,22 @@ class Example extends React.Component {
         const { code, description, name } = this.props.example;
 
         const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
+        
         return (
-            <div>
-                {description && <h4>{description}</h4>}
+            <div id="bui-react-docs-component-example-container">
+                {
+                    description &&
+                    <h4 id="bui-react-docs-component-example-description">
+                        {description}
+                    </h4>
+                 }
 
                 <ExampleComponent />
 
-                <p>
-                    <a href="#" onClick={this.toggleCode}>
+                <p id="bui-react-docs-component-example-code">
+                    <button id="bui-react-docs-component-example-code-toggle-btn" onClick={this.toggleCode}>
                         {showCode ? "Hide": "show"} Code
-                    </a>
+                    </button>
                 </p>
 
 

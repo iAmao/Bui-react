@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOCS: Props Snapshot Test renders component with props 1`] = `
+<div
+  id="bui-react-docs-component-props-container"
+>
+  <table
+    className="props"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Type
+        </th>
+        <th>
+          Default
+        </th>
+        <th>
+          Required
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          children
+        </td>
+        <td>
+          Child elements for the button component
+        </td>
+        <td>
+          node
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          onClick
+        </td>
+        <td>
+          
+        </td>
+        <td>
+          func
+        </td>
+        <td />
+        <td />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`DOCS: Props Snapshot Test renders component without props 1`] = `
+<div
+  id="bui-react-docs-component-props-container"
+>
+  <table
+    className="props"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Type
+        </th>
+        <th>
+          Default
+        </th>
+        <th>
+          Required
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;

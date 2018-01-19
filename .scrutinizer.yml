@@ -1,0 +1,10 @@
+checks:
+    javascript: true
+filter:
+    excluded_paths:
+        - src/**/*.spec.js
+        - config/
+        - coverage/
+        - node_modules/
+        - public/
+        - scripts/

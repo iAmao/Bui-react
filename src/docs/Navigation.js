@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Navigation = ({ component }) => {
+const Navigation = ({ components }) => {
     return (
         <ul className="navigation">
-            {component.map(name => (
-                <li key={name}>
+            {components.map(name => (
+                <li key={name} className="bui-react-docs-component-name">
                     <a href={`#${name}`}>{name}</a>
                 </li>
             ))}
@@ -14,7 +14,7 @@ const Navigation = ({ component }) => {
 }
 
 Navigation.propTypes = {
-    component: PropTypes.array.isRequired
+    components: PropTypes.array.isRequired
 }
 
 export default Navigation;

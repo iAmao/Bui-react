@@ -1,6 +1,3 @@
-// import { writeFile, readFile } from '../../../../Library/Caches/typescript/2.6/node_modules/@types/fs-extra';
-
-
 var fs = require('fs');
 var path = require('path');
 var chalk = require('chalk');
@@ -17,7 +14,6 @@ var paths = {
 
 const enableWatchMode = process.argv.slice[2] === '--watch'
 if (enableWatchMode) {
-    // Regenerate component metadata when components or examples change
     chokidar.watch([paths.examples, paths.components]).on('change', function(event, path) {
         generate(paths);
     });
@@ -29,13 +25,23 @@ if (enableWatchMode) {
 function generate(paths) {
     var errors = [];
     var componentData = getDirectories(paths.components).map(function(componentName) {
-        try {
-            return getComponentData(paths, componentName);
-        } catch(error) {
-            errors.push('An error occurred while generating metadata for ' + componentName + '.\n' + error);
+        if (componentName !== '__tests__' ) {
+            try {
+                return getComponentData(paths, componentName);
+            } catch(error) {
+                errors.push('An error occurred while generating metadata for ' + componentName + '.\n' + error);
+            }
         }
+        return null;
     });
-    writeFile(paths.output, "module.exports = " + JSON.stringify(errors.length ? errors : componentData));
+    return writeFile(
+        paths.output,
+        "module.exports = " + JSON.stringify(
+            errors.length ?
+                errors
+                :
+                componentData.filter((component) => component)
+            ));
 }
 
 function getComponentData(paths, componentName) {
