@@ -33,7 +33,7 @@ function generate(paths) {
             }
         }
     });
-    writeFile(
+    return writeFile(
         paths.output,
         "module.exports = " + JSON.stringify(
             errors.length ?

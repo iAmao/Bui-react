@@ -57,14 +57,13 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
       <p
         id="bui-react-docs-component-example-code"
       >
-        <a
-          href="#"
+        <button
           id="bui-react-docs-component-example-code-toggle-btn"
           onClick={[Function]}
         >
           show
            Code
-        </a>
+        </button>
       </p>
     </div>
     <h3

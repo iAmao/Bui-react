@@ -56,7 +56,7 @@ describe('Docs:Example', () => {
                     componentName={DATA.name}
                 />
             )
-            wrapper.find('a').simulate('click');
+            wrapper.find({ id: 'bui-react-docs-component-example-code-toggle-btn' }).simulate('click');
             expect(wrapper.find({ id: 'bui-react-docs-component-code-snippet-container' })).toHaveLength(1);
         });
 

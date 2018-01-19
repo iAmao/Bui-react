@@ -44,4 +44,8 @@ class App extends React.Component {
     }
 }
 
+App.propTypes = {
+    location: PropTypes.string
+};
+
 export default App;

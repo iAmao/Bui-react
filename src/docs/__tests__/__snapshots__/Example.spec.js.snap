@@ -15,14 +15,13 @@ exports[`Docs:Example Snapshot Test renders component with description 1`] = `
   <p
     id="bui-react-docs-component-example-code"
   >
-    <a
-      href="#"
+    <button
       id="bui-react-docs-component-example-code-toggle-btn"
       onClick={[Function]}
     >
       show
        Code
-    </a>
+    </button>
   </p>
 </div>
 `;
@@ -42,14 +41,13 @@ exports[`Docs:Example Snapshot Test renders component without description 1`] = 
   <p
     id="bui-react-docs-component-example-code"
   >
-    <a
-      href="#"
+    <button
       id="bui-react-docs-component-example-code-toggle-btn"
       onClick={[Function]}
     >
       show
        Code
-    </a>
+    </button>
   </p>
 </div>
 `;

@@ -37,9 +37,9 @@ class Example extends React.Component {
                 <ExampleComponent />
 
                 <p id="bui-react-docs-component-example-code">
-                    <a id="bui-react-docs-component-example-code-toggle-btn" href="#" onClick={this.toggleCode}>
+                    <button id="bui-react-docs-component-example-code-toggle-btn" onClick={this.toggleCode}>
                         {showCode ? "Hide": "show"} Code
-                    </a>
+                    </button>
                 </p>
 
 
