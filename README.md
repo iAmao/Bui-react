@@ -2,3 +2,26 @@
 ---
 ### BUI React
 The React component Library
+
+### Installation
+To install, simply type the command at your terminal:
+```
+$ npm install --save bui-react
+```
+
+Thats all!
+
+#### Example Usage
+```
+import Button from 'bui-react/Button';
+
+export default (props) => {
+    return (
+        <div>
+            <span>Hello there! <Button type="secondary">Click me</Button>
+        </div>
+    )
+}
+
+```
+Visit the official documentation for more examples: [Documentation](https://bui-react.herokuapp.com/)
