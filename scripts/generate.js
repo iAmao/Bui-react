@@ -32,6 +32,7 @@ function generate(paths) {
                 errors.push('An error occurred while generating metadata for ' + componentName + '.\n' + error);
             }
         }
+        return null;
     });
     return writeFile(
         paths.output,
