@@ -2,10 +2,10 @@ import React from 'react';
 import Button from 'bui-react/Button';
 
 /**
- * Default Button component
+ * Secondary Button component
  */
 export default () => {
     return (
-        <Button>Hello!</Button>
+        <Button type="secondary">Secondary Button!</Button>
     );
 }
