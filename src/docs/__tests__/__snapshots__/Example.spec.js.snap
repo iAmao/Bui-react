@@ -17,6 +17,7 @@ exports[`Docs:Example Snapshot Test renders component with description 1`] = `
   >
     <a
       href="#"
+      id="bui-react-docs-component-example-code-toggle-btn"
       onClick={[Function]}
     >
       show
@@ -43,6 +44,7 @@ exports[`Docs:Example Snapshot Test renders component without description 1`] = 
   >
     <a
       href="#"
+      id="bui-react-docs-component-example-code-toggle-btn"
       onClick={[Function]}
     >
       show

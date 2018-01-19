@@ -35,6 +35,7 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
     >
       <a
         href="#"
+        id="bui-react-docs-component-example-code-toggle-btn"
         onClick={[Function]}
       >
         show
@@ -171,6 +172,7 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
     >
       <a
         href="#"
+        id="bui-react-docs-component-example-code-toggle-btn"
         onClick={[Function]}
       >
         show
