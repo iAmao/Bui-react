@@ -58,26 +58,24 @@ describe('DOCS: Component', () => {
         test('renders without props if no props in metadata', () => {
             const data = { ...DATA};
             data.props = null;
-            const wrapper = mount(<Component component={data} />)
+            const wrapper = mount(<Component component={data} />);
             expect(wrapper.find({ id: 'bui-react-docs-component-example-container' })).toHaveLength(1);
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(0);
         });
-    })
+    });
 
     describe('Unit Test', () => {
         test('renders and displays basic metadata about component', () => {
-            const wrapper = shallow(<Component component={DATA} />)
+            const wrapper = shallow(<Component component={DATA} />);
             expect(wrapper.find({ id: 'bui-react-docs-component-name' }).text()).toEqual(componentData[0].name);
             expect(wrapper.find({ id: 'bui-react-docs-component-description' }).text()).toEqual(componentData[0].description);
         });
 
-        // test('errors when required props are not passed in', () => {
-        //     try {
-        //         shallow(<Component component={null} />)
-        //     } catch (error) {
-        //         expect(error.message).toEqual('Cannot read property \'name\' of null');
-        //     }
-        // });
+        test('should render a plural of "Example" when multiple examples are present', () => {
+          const data  = { ...DATA, examples: [...DATA.examples, DATA.examples[0]] };
+          const wrapper = shallow(<Component component={data} />);
+          expect(wrapper.find('#bui-react-docs-component-example-header').text()).toEqual('Examples');
+        });
 
     });
 

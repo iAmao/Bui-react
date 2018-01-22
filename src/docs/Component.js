@@ -10,22 +10,24 @@ const Component = ({component}) => {
 
     return (
         <div id="bui-react-docs-component-container">
-            <h2 id="bui-react-docs-component-name">{name}</h2>
+            <h1 id="bui-react-docs-component-name">{name}</h1>
             <p id="bui-react-docs-component-description">{description}</p>
+            <br /><br />
             <h3 id="bui-react-docs-component-example-header">Example{examples.length > 1 && 's'}</h3>
             {
                 examples.length > 0 ?
-                    examples.map((example) => (
+                    examples.map((example, index) => (
                         <Example
                             example={example}
                             key={example.code}
                             componentName={name}
+                            last={index === examples.length - 1}
                         />
                     ))
                     :
                     "No examples yet"
             }
-
+            <br /><br />
             <h3 id="bui-react-docs-component-props-header">Props</h3>
             {
                 props ?
@@ -35,11 +37,11 @@ const Component = ({component}) => {
             }
         </div>
     )
-}
+};
 
 
 Component.propTypes = {
     component: PropTypes.object.isRequired
-}
+};
 
 export default Component;

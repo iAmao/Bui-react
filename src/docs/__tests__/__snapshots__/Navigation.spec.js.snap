@@ -1,17 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DOCS: Navigation Snapshot Test renders navigation woth a list of props 1`] = `
-<ul
-  className="navigation"
->
-  <li
-    className="bui-react-docs-component-name"
+<div>
+  <div
+    id="navigation-logo"
   >
-    <a
-      href="#Button"
+    <h4>
+      bui React
+    </h4>
+  </div>
+  <div
+    id="navigation-items"
+  >
+    <ul
+      className="navigation"
     >
-      Button
-    </a>
-  </li>
-</ul>
+      <li
+        className="bui-react-docs-component-name active"
+      >
+        <a
+          href="/"
+        >
+          Getting started
+        </a>
+      </li>
+      <li
+        className="bui-react-docs-component-name "
+      >
+        <a
+          href="/button"
+        >
+          Button
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 `;

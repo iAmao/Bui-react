@@ -1,5 +1,122 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Courier New";
+  line-height: 1.8em;
+}
+
+.link {
+  cursor: pointer;
+  color: #C0C0C0;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #000;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#navigation-container {
+  position: relative;
+}
+
+#navigation-container > div {
+  position: fixed;
+  width: 16%;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #333333;
+  box-shadow: 2px 3px 3px #C0C0C0;
+}
+
+#navigation-logo {
+  padding: 30px;
+}
+
+#navigation-logo > h4 {
+  font-family: fantasy;
+  text-space: 2em;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+#content-container {
+  padding: 30px;
+}
+
+#navigation-items > .navigation {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation-items > .navigation > li {
+  list-style: none;
+  padding: 10px;
+  background-color: #222;
+  position: relative;
+}
+
+#navigation-items > .navigation > li.active {
+  background-color: #FFF;
+}
+
+#navigation-items > .navigation > li.active > a {
+  color: #000;
+}
+
+
+#navigation-items > .navigation > li:hover {
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+#navigation-items > .navigation > li:hover a {
+  color: #000;
+}
+
+#navigation-items > .navigation > li > a {
+  color: #FFFFFF;
+  display: block;
+
+  text-decoration: none;
+  font-size: 24px;
+  width: 100%;
+}
+
+#bui-react-docs-component-example-container {
+  padding-left: 100px;
+}
+
+#bui-react-docs-component-example-container hr {
+  height: 2px;
+}
+
+#bui-react-docs-component-code-snippet-container {
+  border: 1px solid #EFEFEF;
+  background-color: #f3f3f3;
+}
+
+#bui-react-docs-component-props-container > table {
+  width: 100%;
+  border: 1px solid #EFEFEF;
+}
+
+#bui-react-docs-component-props-container > table > thead {
+  text-align: left;
+}
+
+#bui-react-docs-component-props-container > table > thead > tr > th {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #C0C0C0;
+}
+#bui-react-docs-component-props-container > table > tbody > tr {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+#bui-react-docs-component-props-container > table > tbody > tr > td {
+  padding: 10px;
+  border-bottom: 1px solid #EFEFEF;
 }

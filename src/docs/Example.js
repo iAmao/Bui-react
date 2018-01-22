@@ -37,22 +37,23 @@ class Example extends React.Component {
                 <ExampleComponent />
 
                 <p id="bui-react-docs-component-example-code">
-                    <button id="bui-react-docs-component-example-code-toggle-btn" onClick={this.toggleCode}>
+                    <span className="link" id="bui-react-docs-component-example-code-toggle-btn" onClick={this.toggleCode}>
                         {showCode ? "Hide": "show"} Code
-                    </button>
+                    </span>
                 </p>
 
-
                 {showCode && <Snippet>{code}</Snippet>}
+                {!this.props.last && <hr />}
             </div>
         )
     }
 }
 
 Example.propTypes = {
+    last: PropTypes.bool,
     example: PropTypes.object.isRequired,
     componentName: PropTypes.string.isRequired
-}
+};
 
 
 export default Example;
