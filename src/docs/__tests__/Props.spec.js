@@ -27,12 +27,19 @@ describe('DOCS: Props', () => {
 
     describe('Unit Test', () => {
         test('renders all props data', () => {
-            const wrapper = shallow(<Props props={componentData[0].props} />)
+            const data = {
+                ...componentData[0].props,
+                children: {
+                  ...componentData[0].props.children,
+                  defaultValue: '<div />'
+                }
+            };
+            const wrapper = shallow(<Props props={data} />);
             expect(wrapper.find('table')).toHaveLength(1);
             expect(wrapper.find('tbody > tr')).toHaveLength(Object.keys(componentData[0].props).length);
         });
         test('renders empty body rows when there are no props', () => {
-            const wrapper = shallow(<Props props={{}} />)
+            const wrapper = shallow(<Props props={{}} />);
             expect(wrapper.find('table')).toHaveLength(1);
             expect(wrapper.find('tbody > tr')).toHaveLength(0);
         });

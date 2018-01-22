@@ -44,7 +44,7 @@ describe('Docs:Example', () => {
                     example={DATA.examples[0]}
                     componentName={DATA.name}
                 />
-            )
+            );
             expect(wrapper.find({ id: 'bui-react-docs-component-example-description' })).toHaveLength(1);
             expect(wrapper.find({ id: 'bui-react-docs-component-example-code' })).toHaveLength(1);
         });
@@ -55,7 +55,7 @@ describe('Docs:Example', () => {
                     example={DATA.examples[0]}
                     componentName={DATA.name}
                 />
-            )
+            );
             wrapper.find({ id: 'bui-react-docs-component-example-code-toggle-btn' }).simulate('click');
             expect(wrapper.find({ id: 'bui-react-docs-component-code-snippet-container' })).toHaveLength(1);
         });

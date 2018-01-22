@@ -4,16 +4,18 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
 <div
   id="bui-react-docs-component-container"
 >
-  <h2
+  <h1
     id="bui-react-docs-component-name"
   >
     Button
-  </h2>
+  </h1>
   <p
     id="bui-react-docs-component-description"
   >
     Button Component
   </p>
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-example-header"
   >
@@ -33,15 +35,18 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
     <p
       id="bui-react-docs-component-example-code"
     >
-      <button
+      <span
+        className="link"
         id="bui-react-docs-component-example-code-toggle-btn"
         onClick={[Function]}
       >
         show
          Code
-      </button>
+      </span>
     </p>
   </div>
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-props-header"
   >
@@ -55,22 +60,26 @@ exports[`DOCS: Component Snapshot Test renders component with props alone 1`] = 
 <div
   id="bui-react-docs-component-container"
 >
-  <h2
+  <h1
     id="bui-react-docs-component-name"
   >
     Button
-  </h2>
+  </h1>
   <p
     id="bui-react-docs-component-description"
   >
     Button Component
   </p>
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-example-header"
   >
     Example
   </h3>
   No examples yet
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-props-header"
   >
@@ -140,16 +149,18 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
 <div
   id="bui-react-docs-component-container"
 >
-  <h2
+  <h1
     id="bui-react-docs-component-name"
   >
     Button
-  </h2>
+  </h1>
   <p
     id="bui-react-docs-component-description"
   >
     Button Component
   </p>
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-example-header"
   >
@@ -169,15 +180,18 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
     <p
       id="bui-react-docs-component-example-code"
     >
-      <button
+      <span
+        className="link"
         id="bui-react-docs-component-example-code-toggle-btn"
         onClick={[Function]}
       >
         show
          Code
-      </button>
+      </span>
     </p>
   </div>
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-props-header"
   >
@@ -247,22 +261,26 @@ exports[`DOCS: Component Snapshot Test renders component without props and examp
 <div
   id="bui-react-docs-component-container"
 >
-  <h2
+  <h1
     id="bui-react-docs-component-name"
   >
     Button
-  </h2>
+  </h1>
   <p
     id="bui-react-docs-component-description"
   >
     Button Component
   </p>
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-example-header"
   >
     Example
   </h3>
   No examples yet
+  <br />
+  <br />
   <h3
     id="bui-react-docs-component-props-header"
   >

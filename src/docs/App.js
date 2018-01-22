@@ -8,8 +8,7 @@ import Navigation from './Navigation';
 import componentData from '../../config/componentData';
 
 
-const PATH = window.location.pathname.substr(1)
-
+const PATH = window.location.pathname.substr(1);
 
 
 class App extends React.Component {
@@ -36,9 +35,16 @@ class App extends React.Component {
         }
 
         return (
-            <div>
-                <Navigation components={componentData.map((component) => component.name)} />
-                <Component component={component}/>
+            <div className="row">
+                <div className="col-md-2" id="navigation-container">
+                    <Navigation
+                      path={PATH.toLowerCase()}
+                      components={componentData.map((component) => component.name)}
+                    />
+                </div>
+                <div className="col-md-8" id="details-container">
+                    <Component component={component}/>
+                </div>
             </div>
         )
     }
