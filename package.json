@@ -15,6 +15,7 @@
   "license": "MIT",
   "bugs": "",
   "dependencies": {
+    "radium": "^0.21.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },

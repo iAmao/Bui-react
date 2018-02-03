@@ -29,7 +29,18 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
     >
       Default Button component
     </h4>
-    <button>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "border": "1px solid #333",
+          "color": "#333",
+          "minWidth": 150,
+          "padding": 10,
+        }
+      }
+    >
       Hello!
     </button>
     <p
@@ -174,7 +185,18 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
     >
       Default Button component
     </h4>
-    <button>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "border": "1px solid #333",
+          "color": "#333",
+          "minWidth": 150,
+          "padding": 10,
+        }
+      }
+    >
       Hello!
     </button>
     <p

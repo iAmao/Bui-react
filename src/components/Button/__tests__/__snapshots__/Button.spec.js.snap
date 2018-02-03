@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Snapshot Test renders display with a single child component 1`] = `
-<button>
+<button
+  data-radium={true}
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "border": "1px solid #333",
+      "color": "#333",
+      "minWidth": 150,
+      "padding": 10,
+    }
+  }
+>
   Hello!
 </button>
 `;
