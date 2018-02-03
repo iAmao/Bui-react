@@ -29,10 +29,226 @@ exports[`DOCS: Props Snapshot Test renders component with props 1`] = `
     <tbody>
       <tr>
         <td>
+          link
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Specifies if the button can and should act as
+              an anchor. If set to true, then the component
+              will have the same properties of the <i><</i>a<i></i>> tag",
+              }
+            }
+          />
+        </td>
+        <td>
+          bool
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          icon
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "",
+              }
+            }
+          />
+        </td>
+        <td>
+          string
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          text
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Content to be displayed inside the button.",
+              }
+            }
+          />
+        </td>
+        <td>
+          string
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          style
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "This prop can be used to override the default styling of this button component.",
+              }
+            }
+          />
+        </td>
+        <td>
+          object
+        </td>
+        <td>
+          {}
+        </td>
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          onClick
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Callback function fired when the button is clicked.
+              <br/>
+              <pre>
+                <code>
+                   function(event: object): void
+                </code>
+                <i>event</i>: Click event targeting the button.
+              </pre>",
+              }
+            }
+          />
+        </td>
+        <td>
+          func
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          iconStyle
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Override default styling of the icon.",
+              }
+            }
+          />
+        </td>
+        <td>
+          object
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          iconWrapperStyle
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Override the default style of the wrapper around the icon.",
+              }
+            }
+          />
+        </td>
+        <td>
+          object
+        </td>
+        <td />
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          iconPosition
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Position of the icon, either <i>\\"right\\"</i> or <i>\\"left\\"</i>",
+              }
+            }
+          />
+        </td>
+        <td>
+          enum
+        </td>
+        <td>
+          'right'
+        </td>
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
+          rounded
+        </td>
+        <td>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Can be a \\"number\\" or \\"boolean\\". If boolean and true,
+              the border radius is set to 60.
+              If a number is specified,
+              then the border radius will use that number.",
+              }
+            }
+          />
+        </td>
+        <td>
+          union
+        </td>
+        <td>
+          false
+        </td>
+        <td>
+          Nope
+        </td>
+      </tr>
+      <tr>
+        <td>
           children
         </td>
         <td>
-          Child elements for the button component
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Element to be displayed inside the button.
+              If text is defined, then the button will use the value of text
+              in the button over children. But, otherwise, children will be
+              displayed.",
+              }
+            }
+          />
         </td>
         <td>
           node
@@ -44,16 +260,27 @@ exports[`DOCS: Props Snapshot Test renders component with props 1`] = `
       </tr>
       <tr>
         <td>
-          onClick
+          type
         </td>
         <td>
-          
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "The type of the button.
+              Can be one of \\"primary\\", \\"secondary\\"",
+              }
+            }
+          />
         </td>
         <td>
-          func
+          enum
         </td>
-        <td />
-        <td />
+        <td>
+          'primary'
+        </td>
+        <td>
+          Nope
+        </td>
       </tr>
     </tbody>
   </table>

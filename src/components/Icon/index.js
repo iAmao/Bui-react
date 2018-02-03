@@ -27,9 +27,7 @@ const styles = {
 
 Icon.defaultProps = {
   size: 15,
-  style: {
-    color: '#333'
-  }
+  style: {}
 };
 
 Icon.propTypes = {

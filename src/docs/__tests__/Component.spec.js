@@ -43,7 +43,7 @@ describe('DOCS: Component', () => {
     describe('Integration Test', () => {
         test('renders and mount the component', () => {
             const wrapper = mount(<Component component={DATA} />)
-            expect(wrapper.find({ id: 'bui-react-docs-component-example-container' })).toHaveLength(1);
+            expect(wrapper.find('.bui-react-docs-component-example-container')).toHaveLength(6);
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(1);
         });
 
@@ -59,7 +59,7 @@ describe('DOCS: Component', () => {
             const data = { ...DATA};
             data.props = null;
             const wrapper = mount(<Component component={data} />);
-            expect(wrapper.find({ id: 'bui-react-docs-component-example-container' })).toHaveLength(1);
+            expect(wrapper.find('.bui-react-docs-component-example-container')).toHaveLength(6);
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(0);
         });
     });

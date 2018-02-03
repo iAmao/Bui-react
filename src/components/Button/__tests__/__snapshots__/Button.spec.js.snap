@@ -7,12 +7,21 @@ exports[`Button Snapshot Test renders display with a single child component 1`] 
     Object {
       "backgroundColor": "#FFF",
       "border": "1px solid #333",
+      "borderRadius": 0,
       "color": "#333",
+      "cursor": "pointer",
+      "fontSize": 18,
       "minWidth": 150,
       "padding": 10,
+      "position": "relative",
+      "textDecoration": "none",
     }
   }
 >
-  Hello!
+  <span
+    data-radium={true}
+  >
+    Hello!
+  </span>
 </button>
 `;

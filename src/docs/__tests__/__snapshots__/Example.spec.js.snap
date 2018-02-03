@@ -2,12 +2,12 @@
 
 exports[`Docs:Example Snapshot Test renders component with description 1`] = `
 <div
-  id="bui-react-docs-component-example-container"
+  className="bui-react-docs-component-example-container"
 >
   <h4
-    id="bui-react-docs-component-example-description"
+    className="bui-react-docs-component-example-description"
   >
-    Default Button component
+    Primary/Default Button component
   </h4>
   <button
     data-radium={true}
@@ -15,16 +15,25 @@ exports[`Docs:Example Snapshot Test renders component with description 1`] = `
       Object {
         "backgroundColor": "#FFF",
         "border": "1px solid #333",
+        "borderRadius": 0,
         "color": "#333",
+        "cursor": "pointer",
+        "fontSize": 18,
         "minWidth": 150,
         "padding": 10,
+        "position": "relative",
+        "textDecoration": "none",
       }
     }
   >
-    Hello!
+    <span
+      data-radium={true}
+    >
+      Primary Button!
+    </span>
   </button>
   <p
-    id="bui-react-docs-component-example-code"
+    className="bui-react-docs-component-example-code"
   >
     <span
       className="link"
@@ -41,12 +50,12 @@ exports[`Docs:Example Snapshot Test renders component with description 1`] = `
 
 exports[`Docs:Example Snapshot Test renders component without description 1`] = `
 <div
-  id="bui-react-docs-component-example-container"
+  className="bui-react-docs-component-example-container"
 >
   <h4
-    id="bui-react-docs-component-example-description"
+    className="bui-react-docs-component-example-description"
   >
-    Default Button component
+    Primary/Default Button component
   </h4>
   <button
     data-radium={true}
@@ -54,16 +63,25 @@ exports[`Docs:Example Snapshot Test renders component without description 1`] = 
       Object {
         "backgroundColor": "#FFF",
         "border": "1px solid #333",
+        "borderRadius": 0,
         "color": "#333",
+        "cursor": "pointer",
+        "fontSize": 18,
         "minWidth": 150,
         "padding": 10,
+        "position": "relative",
+        "textDecoration": "none",
       }
     }
   >
-    Hello!
+    <span
+      data-radium={true}
+    >
+      Primary Button!
+    </span>
   </button>
   <p
-    id="bui-react-docs-component-example-code"
+    className="bui-react-docs-component-example-code"
   >
     <span
       className="link"

@@ -20,14 +20,15 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
     id="bui-react-docs-component-example-header"
   >
     Example
+    s
   </h3>
   <div
-    id="bui-react-docs-component-example-container"
+    className="bui-react-docs-component-example-container"
   >
     <h4
-      id="bui-react-docs-component-example-description"
+      className="bui-react-docs-component-example-description"
     >
-      Default Button component
+      Primary/Default Button component
     </h4>
     <button
       data-radium={true}
@@ -35,16 +36,290 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
         Object {
           "backgroundColor": "#FFF",
           "border": "1px solid #333",
+          "borderRadius": 0,
           "color": "#333",
+          "cursor": "pointer",
+          "fontSize": 18,
           "minWidth": 150,
           "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
         }
       }
     >
-      Hello!
+      <span
+        data-radium={true}
+      >
+        Primary Button!
+      </span>
     </button>
     <p
-      id="bui-react-docs-component-example-code"
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Secondary Button component
+    </h4>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#333",
+          "border": "1px solid #333",
+          "borderRadius": 0,
+          "color": "#FFF",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Secondary Button!
+      </span>
+    </button>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Button with custom styles
+    </h4>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#2b95f8",
+          "border": "none",
+          "borderRadius": 60,
+          "color": "#FFFFFF",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 20,
+          "position": "relative",
+          "textDecoration": "none",
+          "width": 200,
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Custom Button!
+      </span>
+    </button>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Primary/Default Button component
+    </h4>
+    <div>
+      <button
+        data-radium={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "border": "1px solid #333",
+            "borderRadius": 10,
+            "color": "#333",
+            "cursor": "pointer",
+            "fontSize": 18,
+            "minWidth": 150,
+            "padding": 10,
+            "position": "relative",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span
+          data-radium={true}
+        >
+          Click Me!
+        </span>
+      </button>
+      <br />
+      <span>
+        Count: 
+        <b>
+          0
+        </b>
+      </span>
+    </div>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Link Button component
+    </h4>
+    <a
+      data-radium={true}
+      href="#thisisbuttonlink"
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "border": "1px solid #333",
+          "borderRadius": 0,
+          "color": "#333",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Link Button!
+      </span>
+    </a>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Icon Button component
+    </h4>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "border": "1px solid #333",
+          "borderRadius": 0,
+          "color": "#333",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Icon Button
+        <span
+          data-radium={true}
+          style={
+            Object {
+              "margin": "0 0 0 10px",
+            }
+          }
+        >
+          <svg
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "  <path d=\\"M4.03 0c-2.53 0-4.03 3-4.03 3s1.5 3 4.03 3c2.47 0 3.97-3 3.97-3s-1.5-3-3.97-3zm-.03 1c1.11 0 2 .9 2 2 0 1.11-.89 2-2 2-1.1 0-2-.89-2-2 0-1.1.9-2 2-2zm0 1c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1c0-.1-.04-.19-.06-.28-.08.16-.24.28-.44.28-.28 0-.5-.22-.5-.5 0-.2.12-.36.28-.44-.09-.03-.18-.06-.28-.06z\\"
+                transform=\\"translate(0 1)\\" />
+              ",
+              }
+            }
+            data-radium={true}
+            height={20}
+            style={
+              Object {
+                "fill": "#333",
+              }
+            }
+            viewBox="0 0 8 8"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </span>
+      </span>
+    </button>
+    <p
+      className="bui-react-docs-component-example-code"
     >
       <span
         className="link"
@@ -124,10 +399,226 @@ exports[`DOCS: Component Snapshot Test renders component with props alone 1`] = 
       <tbody>
         <tr>
           <td>
+            link
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Specifies if the button can and should act as
+                an anchor. If set to true, then the component
+                will have the same properties of the <i><</i>a<i></i>> tag",
+                }
+              }
+            />
+          </td>
+          <td>
+            bool
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            icon
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "",
+                }
+              }
+            />
+          </td>
+          <td>
+            string
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            text
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Content to be displayed inside the button.",
+                }
+              }
+            />
+          </td>
+          <td>
+            string
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            style
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "This prop can be used to override the default styling of this button component.",
+                }
+              }
+            />
+          </td>
+          <td>
+            object
+          </td>
+          <td>
+            {}
+          </td>
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            onClick
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Callback function fired when the button is clicked.
+                <br/>
+                <pre>
+                  <code>
+                     function(event: object): void
+                  </code>
+                  <i>event</i>: Click event targeting the button.
+                </pre>",
+                }
+              }
+            />
+          </td>
+          <td>
+            func
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            iconStyle
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Override default styling of the icon.",
+                }
+              }
+            />
+          </td>
+          <td>
+            object
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            iconWrapperStyle
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Override the default style of the wrapper around the icon.",
+                }
+              }
+            />
+          </td>
+          <td>
+            object
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            iconPosition
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Position of the icon, either <i>\\"right\\"</i> or <i>\\"left\\"</i>",
+                }
+              }
+            />
+          </td>
+          <td>
+            enum
+          </td>
+          <td>
+            'right'
+          </td>
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            rounded
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Can be a \\"number\\" or \\"boolean\\". If boolean and true,
+                the border radius is set to 60.
+                If a number is specified,
+                then the border radius will use that number.",
+                }
+              }
+            />
+          </td>
+          <td>
+            union
+          </td>
+          <td>
+            false
+          </td>
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
             children
           </td>
           <td>
-            Child elements for the button component
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Element to be displayed inside the button.
+                If text is defined, then the button will use the value of text
+                in the button over children. But, otherwise, children will be
+                displayed.",
+                }
+              }
+            />
           </td>
           <td>
             node
@@ -139,16 +630,27 @@ exports[`DOCS: Component Snapshot Test renders component with props alone 1`] = 
         </tr>
         <tr>
           <td>
-            onClick
+            type
           </td>
           <td>
-            
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "The type of the button.
+                Can be one of \\"primary\\", \\"secondary\\"",
+                }
+              }
+            />
           </td>
           <td>
-            func
+            enum
           </td>
-          <td />
-          <td />
+          <td>
+            'primary'
+          </td>
+          <td>
+            Nope
+          </td>
         </tr>
       </tbody>
     </table>
@@ -176,14 +678,15 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
     id="bui-react-docs-component-example-header"
   >
     Example
+    s
   </h3>
   <div
-    id="bui-react-docs-component-example-container"
+    className="bui-react-docs-component-example-container"
   >
     <h4
-      id="bui-react-docs-component-example-description"
+      className="bui-react-docs-component-example-description"
     >
-      Default Button component
+      Primary/Default Button component
     </h4>
     <button
       data-radium={true}
@@ -191,16 +694,290 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
         Object {
           "backgroundColor": "#FFF",
           "border": "1px solid #333",
+          "borderRadius": 0,
           "color": "#333",
+          "cursor": "pointer",
+          "fontSize": 18,
           "minWidth": 150,
           "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
         }
       }
     >
-      Hello!
+      <span
+        data-radium={true}
+      >
+        Primary Button!
+      </span>
     </button>
     <p
-      id="bui-react-docs-component-example-code"
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Secondary Button component
+    </h4>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#333",
+          "border": "1px solid #333",
+          "borderRadius": 0,
+          "color": "#FFF",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Secondary Button!
+      </span>
+    </button>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Button with custom styles
+    </h4>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#2b95f8",
+          "border": "none",
+          "borderRadius": 60,
+          "color": "#FFFFFF",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 20,
+          "position": "relative",
+          "textDecoration": "none",
+          "width": 200,
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Custom Button!
+      </span>
+    </button>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Primary/Default Button component
+    </h4>
+    <div>
+      <button
+        data-radium={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "border": "1px solid #333",
+            "borderRadius": 10,
+            "color": "#333",
+            "cursor": "pointer",
+            "fontSize": 18,
+            "minWidth": 150,
+            "padding": 10,
+            "position": "relative",
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span
+          data-radium={true}
+        >
+          Click Me!
+        </span>
+      </button>
+      <br />
+      <span>
+        Count: 
+        <b>
+          0
+        </b>
+      </span>
+    </div>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Link Button component
+    </h4>
+    <a
+      data-radium={true}
+      href="#thisisbuttonlink"
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "border": "1px solid #333",
+          "borderRadius": 0,
+          "color": "#333",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Link Button!
+      </span>
+    </a>
+    <p
+      className="bui-react-docs-component-example-code"
+    >
+      <span
+        className="link"
+        id="bui-react-docs-component-example-code-toggle-btn"
+        onClick={[Function]}
+      >
+        show
+         Code
+      </span>
+    </p>
+    <hr />
+  </div>
+  <div
+    className="bui-react-docs-component-example-container"
+  >
+    <h4
+      className="bui-react-docs-component-example-description"
+    >
+      Icon Button component
+    </h4>
+    <button
+      data-radium={true}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "border": "1px solid #333",
+          "borderRadius": 0,
+          "color": "#333",
+          "cursor": "pointer",
+          "fontSize": 18,
+          "minWidth": 150,
+          "padding": 10,
+          "position": "relative",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        data-radium={true}
+      >
+        Icon Button
+        <span
+          data-radium={true}
+          style={
+            Object {
+              "margin": "0 0 0 10px",
+            }
+          }
+        >
+          <svg
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "  <path d=\\"M4.03 0c-2.53 0-4.03 3-4.03 3s1.5 3 4.03 3c2.47 0 3.97-3 3.97-3s-1.5-3-3.97-3zm-.03 1c1.11 0 2 .9 2 2 0 1.11-.89 2-2 2-1.1 0-2-.89-2-2 0-1.1.9-2 2-2zm0 1c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1c0-.1-.04-.19-.06-.28-.08.16-.24.28-.44.28-.28 0-.5-.22-.5-.5 0-.2.12-.36.28-.44-.09-.03-.18-.06-.28-.06z\\"
+                transform=\\"translate(0 1)\\" />
+              ",
+              }
+            }
+            data-radium={true}
+            height={20}
+            style={
+              Object {
+                "fill": "#333",
+              }
+            }
+            viewBox="0 0 8 8"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          />
+        </span>
+      </span>
+    </button>
+    <p
+      className="bui-react-docs-component-example-code"
     >
       <span
         className="link"
@@ -247,10 +1024,226 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
       <tbody>
         <tr>
           <td>
+            link
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Specifies if the button can and should act as
+                an anchor. If set to true, then the component
+                will have the same properties of the <i><</i>a<i></i>> tag",
+                }
+              }
+            />
+          </td>
+          <td>
+            bool
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            icon
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "",
+                }
+              }
+            />
+          </td>
+          <td>
+            string
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            text
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Content to be displayed inside the button.",
+                }
+              }
+            />
+          </td>
+          <td>
+            string
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            style
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "This prop can be used to override the default styling of this button component.",
+                }
+              }
+            />
+          </td>
+          <td>
+            object
+          </td>
+          <td>
+            {}
+          </td>
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            onClick
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Callback function fired when the button is clicked.
+                <br/>
+                <pre>
+                  <code>
+                     function(event: object): void
+                  </code>
+                  <i>event</i>: Click event targeting the button.
+                </pre>",
+                }
+              }
+            />
+          </td>
+          <td>
+            func
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            iconStyle
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Override default styling of the icon.",
+                }
+              }
+            />
+          </td>
+          <td>
+            object
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            iconWrapperStyle
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Override the default style of the wrapper around the icon.",
+                }
+              }
+            />
+          </td>
+          <td>
+            object
+          </td>
+          <td />
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            iconPosition
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Position of the icon, either <i>\\"right\\"</i> or <i>\\"left\\"</i>",
+                }
+              }
+            />
+          </td>
+          <td>
+            enum
+          </td>
+          <td>
+            'right'
+          </td>
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
+            rounded
+          </td>
+          <td>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Can be a \\"number\\" or \\"boolean\\". If boolean and true,
+                the border radius is set to 60.
+                If a number is specified,
+                then the border radius will use that number.",
+                }
+              }
+            />
+          </td>
+          <td>
+            union
+          </td>
+          <td>
+            false
+          </td>
+          <td>
+            Nope
+          </td>
+        </tr>
+        <tr>
+          <td>
             children
           </td>
           <td>
-            Child elements for the button component
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Element to be displayed inside the button.
+                If text is defined, then the button will use the value of text
+                in the button over children. But, otherwise, children will be
+                displayed.",
+                }
+              }
+            />
           </td>
           <td>
             node
@@ -262,16 +1255,27 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
         </tr>
         <tr>
           <td>
-            onClick
+            type
           </td>
           <td>
-            
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "The type of the button.
+                Can be one of \\"primary\\", \\"secondary\\"",
+                }
+              }
+            />
           </td>
           <td>
-            func
+            enum
           </td>
-          <td />
-          <td />
+          <td>
+            'primary'
+          </td>
+          <td>
+            Nope
+          </td>
         </tr>
       </tbody>
     </table>

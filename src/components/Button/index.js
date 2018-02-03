@@ -167,7 +167,7 @@ Button.propTypes = {
    * displayed.
    */
   children: PropTypes.node,
-  
+
   /**
    * The type of the button.
    * Can be one of "primary", "secondary"

@@ -38,15 +38,15 @@ describe('Docs:Example', () => {
     });
 
     describe('Integration Test', () => {
-        test('renders and mount the component its child components', () => {
+        test('renders and mount the component and its child components', () => {
             const wrapper = mount(
                 <Example
-                    example={DATA.examples[0]}
                     componentName={DATA.name}
+                    example={DATA.examples[0]}
                 />
             );
-            expect(wrapper.find({ id: 'bui-react-docs-component-example-description' })).toHaveLength(1);
-            expect(wrapper.find({ id: 'bui-react-docs-component-example-code' })).toHaveLength(1);
+            expect(wrapper.find('.bui-react-docs-component-example-description')).toHaveLength(1);
+            expect(wrapper.find('.bui-react-docs-component-example-code')).toHaveLength(1);
         });
 
         test('renders the example code on toggle', () => {

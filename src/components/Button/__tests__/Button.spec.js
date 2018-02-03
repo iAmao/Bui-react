@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 
 import Button from '../';
 
@@ -28,6 +28,14 @@ describe('Button', () => {
             expect(wrapper.text()).toEqual('Hello!');
         });
 
+        test('Button should display text props if no children props', () => {
+            const wrapper = shallow(
+                <Button text="Hello!"/>
+            );
+            expect(wrapper.length).toEqual(1);
+            expect(wrapper.text()).toEqual('Hello!');
+        });
+
         test('Button should take in onClick props and call it on click event', () => {
             const mock = jest.fn();
             const onClick = new mock();
@@ -40,6 +48,16 @@ describe('Button', () => {
             wrapper.find('button').simulate('click');
 
             expect(mock.mock.calls.length).toBe(1);
+        });
+
+        test('Button should display an icon', () => {
+            const wrapper = render(
+                <Button icon="eye">Hello!</Button>
+            );
+
+            expect(wrapper.length).toEqual(1);
+            expect(wrapper.text().search('Hello!')).toEqual(0);
+            expect(wrapper.children().children().children()[0].name).toEqual('svg');
         });
     });
     
