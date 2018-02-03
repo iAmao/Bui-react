@@ -3,8 +3,14 @@ import renderer from 'react-test-renderer';
 
 import { shallow, render } from 'enzyme';
 
-import Icon from '../';
+import IconComponent from '../';
+import BuiTheme from '../../BuiTheme';
 
+const Icon = (props) => (
+    <BuiTheme>
+        <IconComponent {...props} />
+    </BuiTheme>
+);
 
 describe('Icon', () => {
 

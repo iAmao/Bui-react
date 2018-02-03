@@ -13,7 +13,7 @@ var paths = {
     output: path.join(__dirname, '../config', 'componentData.js'),
 };
 
-var ignoredFolders = ['assets'];
+var ignoredFolders = ['assets', 'BuiTheme'];
 
 
 const enableWatchMode = process.argv.slice[2] === '--watch'

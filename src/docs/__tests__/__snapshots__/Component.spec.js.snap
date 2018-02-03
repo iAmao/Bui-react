@@ -126,7 +126,6 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
         Object {
           "backgroundColor": "#2b95f8",
           "border": "none",
-          "borderRadius": 60,
           "color": "#FFFFFF",
           "cursor": "pointer",
           "fontSize": 18,
@@ -174,7 +173,6 @@ exports[`DOCS: Component Snapshot Test renders component with examples alone 1`]
           Object {
             "backgroundColor": "#FFF",
             "border": "1px solid #333",
-            "borderRadius": 10,
             "color": "#333",
             "cursor": "pointer",
             "fontSize": 18,
@@ -784,7 +782,6 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
         Object {
           "backgroundColor": "#2b95f8",
           "border": "none",
-          "borderRadius": 60,
           "color": "#FFFFFF",
           "cursor": "pointer",
           "fontSize": 18,
@@ -832,7 +829,6 @@ exports[`DOCS: Component Snapshot Test renders component with props and examples
           Object {
             "backgroundColor": "#FFF",
             "border": "1px solid #333",
-            "borderRadius": 10,
             "color": "#333",
             "cursor": "pointer",
             "fontSize": 18,

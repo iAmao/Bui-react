@@ -3,6 +3,8 @@ import Radium from 'radium';
 import PropTypes from 'prop-types';
 import Icon from 'bui-react/Icon';
 
+import stylesheet from './style';
+
 /**
  * Button Component
  */
@@ -18,14 +20,20 @@ function Button({
   iconPosition,
   iconWrapperStyle,
   ...props
-}) {
+}, context) {
+    let styles;
+    try {
+      styles = context.bui.theme.button;
+    } catch(e) {
+      styles = stylesheet;
+    }
     const combineProps = {
       ...props,
       style:[
         styles.base,
         styles[type],
         rounded ?
-          styles['rounded'](typeof rounded === 'boolean' ? null : rounded)
+          styles['rounded']
           :
           styles['block'],
         style
@@ -63,37 +71,13 @@ function Button({
     );
 }
 
-const styles = {
-  base: {
-      padding: 10,
-      fontSize: 18,
-      minWidth: 150,
-      cursor: 'pointer',
-      position: 'relative',
-      textDecoration: 'none',
-      border: '1px solid #333'
-  },
-  primary: {
-    color: '#333',
-    backgroundColor: '#FFF'
-  },
-  secondary: {
-    color: '#FFF',
-    backgroundColor: '#333'
-  },
-  rounded: (size) => {
-    return {
-      borderRadius: size || 60
-    };
-  },
-  block: {
-    borderRadius: 0
-  },
-  iconContainer: {
-    margin: '0 0 0 10px'
-  }
-};
-
+Button.contextTypes = {
+  bui: PropTypes.shape({
+    button: PropTypes.shape({
+      base: PropTypes.object
+    })
+  })
+}
 
 Button.defaultProps = {
   style: {},

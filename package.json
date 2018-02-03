@@ -15,7 +15,6 @@
   "license": "MIT",
   "bugs": "",
   "dependencies": {
-    "radium": "^0.21.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -26,6 +25,7 @@
     "start": "npm-run-all --parallel start:docs gen:docs",
     "start:docs": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "build:theme": "node scripts/generateThemeFromYAML.js",
     "build:package": "npm run build:commonjs && node ./scripts/copyBuild.js",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
     "test": "node scripts/test.js --env=jsdom && codecov"
@@ -42,6 +42,7 @@
       "<rootDir>/public/",
       "<rootDir>/scripts/",
       "<rootDir>/src/index.js",
+      "<rootDir>/src/svg",
       "<rootDir>/src/registerServiceWorker.js",
       "<rootDir>/src/docs/examples"
     ],
