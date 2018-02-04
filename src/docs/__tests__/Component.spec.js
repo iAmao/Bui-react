@@ -54,14 +54,6 @@ describe('DOCS: Component', () => {
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(1);
         });
 
-        test('renders with BuiTheme default theme', () => {
-            const wrapper = mount(
-                <BuiTheme>
-                    <Component component={DATA} />
-                </BuiTheme>
-            )
-        });
-
         test('renders without examples if no examples in metadata', () => {
             const data = { ...DATA};
             data.examples = [];

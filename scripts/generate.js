@@ -1,4 +1,3 @@
-var fs = require('fs');
 var path = require('path');
 var chalk = require('chalk');
 var chokidar = require('chokidar');

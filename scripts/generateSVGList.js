@@ -1,5 +1,4 @@
 var path = require('path');
-var fs = require('fs-extra');
 var util = require('./util');
 
 var SVGPath = path.join(__dirname, '../', 'src/components/assets/svg');
