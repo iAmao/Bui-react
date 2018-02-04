@@ -131,6 +131,18 @@ module.exports = {
                       },
                     },
                     {
+                      test: /\.yml$/,
+                      use: [
+                        { loader: path.resolve(__dirname, './yaml-loader.js') },
+                        {
+                          loader: 'file-loader',
+                          options: {
+                            name: 'static/media/[name].[hash:8].[ext]',
+                          }
+                        }
+                      ]
+                    },
+                    {
                       loader: require.resolve('postcss-loader'),
                       options: {
                         // Necessary for external CSS imports to work

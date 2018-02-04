@@ -2,10 +2,12 @@ import React from 'react';
 import Button from 'bui-react/Button';
 
 /**
- * Default Button component
+ * Icon Button component
  */
 export default () => {
-    return (
-        <Button>Hello!</Button>
-    );
+  return (
+    <Button icon="eye">
+      Icon Button
+    </Button>
+  );
 }

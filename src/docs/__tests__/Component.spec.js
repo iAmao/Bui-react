@@ -4,7 +4,11 @@ import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 
 import Component from '../Component';
+import BuiTheme from '../../components/BuiTheme';
+
 import componentData from '../../../config/jest/componentDataMock';
+
+
 
 const DATA = componentData[0];
 
@@ -42,15 +46,22 @@ describe('DOCS: Component', () => {
 
     describe('Integration Test', () => {
         test('renders and mount the component', () => {
-            const wrapper = mount(<Component component={DATA} />)
-            expect(wrapper.find({ id: 'bui-react-docs-component-example-container' })).toHaveLength(1);
+            const wrapper = mount(
+                <BuiTheme>
+                    <Component component={DATA} />
+                </BuiTheme>)
+            expect(wrapper.find('.bui-react-docs-component-example-container')).toHaveLength(6);
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(1);
         });
 
         test('renders without examples if no examples in metadata', () => {
             const data = { ...DATA};
             data.examples = [];
-            const wrapper = mount(<Component component={data} />)
+            const wrapper = mount(
+                <BuiTheme>
+                    <Component component={data} />
+                </BuiTheme>
+            )
             expect(wrapper.find({ id: 'bui-react-docs-component-example-container' })).toHaveLength(0);
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(1);
         });
@@ -58,8 +69,12 @@ describe('DOCS: Component', () => {
         test('renders without props if no props in metadata', () => {
             const data = { ...DATA};
             data.props = null;
-            const wrapper = mount(<Component component={data} />);
-            expect(wrapper.find({ id: 'bui-react-docs-component-example-container' })).toHaveLength(1);
+            const wrapper = mount(
+                <BuiTheme>
+                    <Component component={data} />
+                </BuiTheme>
+                );
+            expect(wrapper.find('.bui-react-docs-component-example-container')).toHaveLength(6);
             expect(wrapper.find({ id: 'bui-react-docs-component-props-container' })).toHaveLength(0);
         });
     });

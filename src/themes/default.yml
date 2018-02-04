@@ -1,0 +1,26 @@
+name: default
+colors:
+ primary: &c_p "#FFFFFF"
+ secondary: &c_s "#333333"
+
+button:
+ base:
+  padding: !!int 10
+  fontSize: !!int 18
+  minWidth: !!int 150
+  cursor: !!str pointer
+  position: !!str relative
+  textDecoration: !!str none
+  border: !!str &border_d "1px solid #333333"
+ primary:
+  color: !!str "#333"
+  backgroundColor: !!str "#FFF"
+ secondary:
+  color: !!str "#FFF"
+  backgroundColor: !!str "#333"
+ rounded:
+  borderRadius: 80
+ block:
+  borderRadius: !!int 0
+ iconContainer:
+  margin: !!str 0 0 0 10px 

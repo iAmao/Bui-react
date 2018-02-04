@@ -33,6 +33,15 @@ exports[`DOCS: Navigation Snapshot Test renders navigation woth a list of props 
           Button
         </a>
       </li>
+      <li
+        className="bui-react-docs-component-name "
+      >
+        <a
+          href="/icon"
+        >
+          Icon
+        </a>
+      </li>
     </ul>
   </div>
 </div>

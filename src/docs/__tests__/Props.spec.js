@@ -10,7 +10,14 @@ describe('DOCS: Props', () => {
 
     describe('Snapshot Test', () => {
         test('renders component with props', () => {
-            const data = { ...componentData[0]};
+            const data = {
+                ...componentData[0].props,
+                children: {
+                    ...componentData[0].props.children,
+                    defaultValue: '<div />',
+                    required: true
+                }
+            };
             data.description = null;
             const tree = renderer.create(
                 <Props props={componentData[0].props} />
@@ -31,9 +38,11 @@ describe('DOCS: Props', () => {
                 ...componentData[0].props,
                 children: {
                   ...componentData[0].props.children,
-                  defaultValue: '<div />'
+                  defaultValue: '<div />',
+                  required: true
                 }
             };
+
             const wrapper = shallow(<Props props={data} />);
             expect(wrapper.find('table')).toHaveLength(1);
             expect(wrapper.find('tbody > tr')).toHaveLength(Object.keys(componentData[0].props).length);
@@ -43,5 +52,11 @@ describe('DOCS: Props', () => {
             expect(wrapper.find('table')).toHaveLength(1);
             expect(wrapper.find('tbody > tr')).toHaveLength(0);
         });
+
+        // test('renders "Nope" if prop is nt required', () => {
+        //     const wrapper = shallow(<Props props={{}} />);
+        //     expect(wrapper.find('table')).toHaveLength(1);
+        //     expect(wrapper.find('tbody > tr')).toHaveLength(0);
+        // });
     });
 });

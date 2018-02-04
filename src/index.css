@@ -85,11 +85,15 @@ body {
   width: 100%;
 }
 
-#bui-react-docs-component-example-container {
+#bui-react-docs-component-container {
+  margin-bottom: 100px;
+}
+
+.bui-react-docs-component-example-container {
   padding-left: 100px;
 }
 
-#bui-react-docs-component-example-container hr {
+.bui-react-docs-component-example-container hr {
   height: 2px;
 }
 

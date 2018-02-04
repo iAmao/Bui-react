@@ -1,7 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button Snapshot Test renders a round button component 1`] = `
+<button
+  data-radium={true}
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "border": "1px solid #333",
+      "color": "#333",
+      "cursor": "pointer",
+      "fontSize": 18,
+      "minWidth": 150,
+      "padding": 10,
+      "position": "relative",
+      "textDecoration": "none",
+    }
+  }
+>
+  <span
+    data-radium={true}
+  >
+    Hello!
+  </span>
+</button>
+`;
+
+exports[`Button Snapshot Test renders a round button component with default theme 1`] = `
+<button
+  data-radium={true}
+  style={
+    Object {
+      "cursor": "pointer",
+    }
+  }
+>
+  <span
+    data-radium={true}
+  >
+    Hello!
+  </span>
+</button>
+`;
+
+exports[`Button Snapshot Test renders button with a custom theme 1`] = `
+<button
+  data-radium={true}
+  style={
+    Object {
+      "borderRadius": 10,
+      "color": "red",
+      "width": 400,
+    }
+  }
+>
+  <span
+    data-radium={true}
+  >
+    Hello!
+  </span>
+</button>
+`;
+
 exports[`Button Snapshot Test renders display with a single child component 1`] = `
-<button>
-  Hello!
+<button
+  data-radium={true}
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "border": "1px solid #333",
+      "borderRadius": 0,
+      "color": "#333",
+      "cursor": "pointer",
+      "fontSize": 18,
+      "minWidth": 150,
+      "padding": 10,
+      "position": "relative",
+      "textDecoration": "none",
+    }
+  }
+>
+  <span
+    data-radium={true}
+  >
+    Hello!
+  </span>
+</button>
+`;
+
+exports[`Button Snapshot Test renders with the BuiTheme default theme 1`] = `
+<button
+  data-radium={true}
+  style={
+    Object {
+      "cursor": "pointer",
+    }
+  }
+>
+  <span
+    data-radium={true}
+  >
+    Hello!
+  </span>
 </button>
 `;

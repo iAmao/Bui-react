@@ -21,10 +21,10 @@ const Props = ({ props }) => {
                         return (
                             <tr key={key}>
                                 <td>{key}</td>
-                                <td>{props[key].description}</td>
+                                <td><p dangerouslySetInnerHTML={{ __html: props[key].description}} /></td>
                                 <td>{props[key].type.name}</td>
                                 <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
-                                <td>{props[key].required && "Nope"}</td>
+                                <td>{props[key].required ? "Yes" : "Nope"}</td>
                             </tr>
                         )
                     })

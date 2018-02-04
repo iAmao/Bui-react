@@ -26,17 +26,17 @@ class Example extends React.Component {
         const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
         
         return (
-            <div id="bui-react-docs-component-example-container">
+            <div className="bui-react-docs-component-example-container">
                 {
                     description &&
-                    <h4 id="bui-react-docs-component-example-description">
+                    <h4 className="bui-react-docs-component-example-description">
                         {description}
                     </h4>
                  }
 
                 <ExampleComponent />
 
-                <p id="bui-react-docs-component-example-code">
+                <p className="bui-react-docs-component-example-code">
                     <span className="link" id="bui-react-docs-component-example-code-toggle-btn" onClick={this.toggleCode}>
                         {showCode ? "Hide": "show"} Code
                     </span>

@@ -7,6 +7,8 @@ import Navigation from './Navigation';
 
 import componentData from '../../config/componentData';
 
+import BuiTheme from '../components/BuiTheme'
+
 
 const PATH = window.location.pathname.substr(1);
 
@@ -43,7 +45,9 @@ class App extends React.Component {
                     />
                 </div>
                 <div className="col-md-8" id="details-container">
-                    <Component component={component}/>
+                    <BuiTheme>
+                        <Component component={component}/>
+                    </BuiTheme>
                 </div>
             </div>
         )
