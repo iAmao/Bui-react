@@ -2,20 +2,27 @@ const path = require('path');
 const fs = require('fs-extra');
 
 
-const files = [
-    'README.md',
-    'LICENSE'
-];
+const files = {
+    'README.md': '',
+    'LICENSE': '',
+    'src/components/assets/themes/default.theme.yml': 'assets/themes'
+};
 
-Promise.all(files.map((file) => copyFile(file)))
+Promise.all(Object.keys(files).map((file) => copyFile(file, files[file])))
     .then(() => createPackageFile());
 
 
-function copyFile(file) {
+function copyFile(file, filePath) {
     return new Promise(function (resolve) {
+        console.log(`copying ${file} to ${path.resolve(__dirname, '../lib', filePath)}`)
         return fs.copy(
             file,
-            path.resolve(__dirname, '../lib', path.basename(file)),
+            path.resolve(
+                __dirname,
+                '../lib',
+                filePath,
+                path.basename(file)
+            ),
             function(error, data) {
                 if (error) {
                     throw new Error (`error copying file ${file}`, error);
