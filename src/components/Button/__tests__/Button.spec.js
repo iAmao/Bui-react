@@ -39,6 +39,26 @@ describe('Button', () => {
             expect(tree).toMatchSnapshot();
         });
     
+        test('renders button with a custom theme', () => {
+            const theme = {
+                name: 'custom',
+                colors: { primary: '', secondary: '' },
+                button: {
+                    base: { width: 400 },
+                    primary: { color: 'red' },
+                    secondary: { color: 'green' },
+                    rounded: { borderRadius: 10 },
+                    block: { borderRadius: 0 },
+                }
+            }
+            const tree = renderer.create(
+                <BuiTheme theme={theme}>
+                    <Button rounded>Hello!</Button>
+                </BuiTheme>
+            ).toJSON();
+            expect(tree).toMatchSnapshot();
+        })
+
     });
     
 

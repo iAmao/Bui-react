@@ -15,6 +15,7 @@
   "license": "MIT",
   "bugs": "",
   "dependencies": {
+    "radium": "^0.21.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -67,7 +68,8 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "^bui-react(.*)$": "<rootDir>/src/components$1"
+      "^bui-react(.*)$": "<rootDir>/src/components$1",
+      "\\.(theme.yml)$": "<rootDir>/config/jest/__mocks__/yamlThemeFileMock.js"
     },
     "moduleFileExtensions": [
       "web.js",
@@ -133,6 +135,8 @@
     "highlight.js": "^9.12.0",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "js-yaml": "^3.10.0",
+    "loader-utils": "^1.1.0",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.0.2",
     "object-assign": "4.1.1",
@@ -152,6 +156,7 @@
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.4",
     "webpack-manifest-plugin": "1.3.2",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "2.0.3",
+    "yaml-loader": "^0.5.0"
   }
 }

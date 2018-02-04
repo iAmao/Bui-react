@@ -1,17 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import theme from '../assets/themes/default.json';
-
 
 class BuiTheme extends React.Component {
 
     getChildContext() {
-        const { name, colors, ...buiThemes } = theme;
-        return { bui:
-            {
-                theme: buiThemes
-            }
+        let yaml = {}
+        if (!this.props.theme) {
+            yaml = require('../assets/themes/default.theme.yml').json;
+        } else {
+            yaml = this.props.theme;
+        }
+        const { name, colors, ...buiThemes } = yaml;
+        return {
+            bui:
+                {
+                    theme: buiThemes
+                }
         };
     }
 
@@ -33,6 +38,18 @@ BuiTheme.childContextTypes = {
     button: PropTypes.shape({
         base: PropTypes.object
     })
+};
+
+BuiTheme.propTypes = {
+    theme: PropTypes.shape({
+        name: PropTypes.string,
+        colors: PropTypes.shape({
+            primary: PropTypes.string,
+            secondary: PropTypes.string
+        }),
+        button: PropTypes.object
+    }),
+    children: PropTypes.node
 };
 
 export default BuiTheme;

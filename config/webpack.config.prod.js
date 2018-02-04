@@ -131,6 +131,18 @@ module.exports = {
                       },
                     },
                     {
+                      test: /\.yml$/,
+                      use: [
+                        { loader: path.resolve(__dirname, './yaml-loader.js') },
+                        {
+                          loader: 'file-loader',
+                          options: {
+                            name: 'static/media/[name].[hash:8].[ext]',
+                          }
+                        }
+                      ]
+                    },
+                    {
                       loader: require.resolve('postcss-loader'),
                       options: {
                         // Necessary for external CSS imports to work
@@ -166,7 +178,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/, /\.yml$/],
+            exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
             },

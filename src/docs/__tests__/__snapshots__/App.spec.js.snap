@@ -100,16 +100,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
           data-radium={true}
           style={
             Object {
-              "backgroundColor": "#FFF",
-              "border": "1px solid #333333",
-              "borderRadius": 0,
-              "color": "#333",
               "cursor": "pointer",
-              "fontSize": 18,
-              "minWidth": 150,
-              "padding": 10,
-              "position": "relative",
-              "textDecoration": "none",
             }
           }
         >
@@ -145,16 +136,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
           data-radium={true}
           style={
             Object {
-              "backgroundColor": "#333",
-              "border": "1px solid #333333",
-              "borderRadius": 0,
-              "color": "#FFF",
               "cursor": "pointer",
-              "fontSize": 18,
-              "minWidth": 150,
-              "padding": 10,
-              "position": "relative",
-              "textDecoration": "none",
             }
           }
         >
@@ -192,14 +174,9 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
             Object {
               "backgroundColor": "#2b95f8",
               "border": "none",
-              "borderRadius": 80,
               "color": "#FFFFFF",
               "cursor": "pointer",
-              "fontSize": 18,
-              "minWidth": 150,
               "padding": 20,
-              "position": "relative",
-              "textDecoration": "none",
               "width": 200,
             }
           }
@@ -238,16 +215,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
             onClick={[Function]}
             style={
               Object {
-                "backgroundColor": "#FFF",
-                "border": "1px solid #333333",
-                "borderRadius": 80,
-                "color": "#333",
                 "cursor": "pointer",
-                "fontSize": 18,
-                "minWidth": 150,
-                "padding": 10,
-                "position": "relative",
-                "textDecoration": "none",
               }
             }
           >
@@ -292,16 +260,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
           href="#thisisbuttonlink"
           style={
             Object {
-              "backgroundColor": "#FFF",
-              "border": "1px solid #333333",
-              "borderRadius": 0,
-              "color": "#333",
               "cursor": "pointer",
-              "fontSize": 18,
-              "minWidth": 150,
-              "padding": 10,
-              "position": "relative",
-              "textDecoration": "none",
             }
           }
         >
@@ -337,16 +296,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
           data-radium={true}
           style={
             Object {
-              "backgroundColor": "#FFF",
-              "border": "1px solid #333333",
-              "borderRadius": 0,
-              "color": "#333",
               "cursor": "pointer",
-              "fontSize": 18,
-              "minWidth": 150,
-              "padding": 10,
-              "position": "relative",
-              "textDecoration": "none",
             }
           }
         >
@@ -356,11 +306,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
             Icon Button
             <span
               data-radium={true}
-              style={
-                Object {
-                  "margin": "0 0 0 10px",
-                }
-              }
+              style={Object {}}
             >
               <svg
                 dangerouslySetInnerHTML={
