@@ -32,6 +32,9 @@
     "test": "node scripts/test.js --env=jsdom && codecov"
   },
   "jest": {
+    "globals": {
+      "window": true
+    },
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}",

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Doc: Router Snapshot Test renders the component page 1`] = `
+<div
+  id="some"
+/>
+`;
