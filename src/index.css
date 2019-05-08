@@ -124,3 +124,7 @@ body {
   padding: 10px;
   border-bottom: 1px solid #EFEFEF;
 }
+
+#bui-react-docs-gallery-container {
+  margin: auto;
+}
