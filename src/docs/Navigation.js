@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Link from './Link';
 
-const Navigation = ({ components, path }) => {
+const Navigation = ({ components, path: fullPath }) => {
+    const path = fullPath.substr(1);
 
     return (
         <div>
@@ -12,7 +14,10 @@ const Navigation = ({ components, path }) => {
             <div id="navigation-items">
                 <ul className="navigation">
                   <li className={`bui-react-docs-component-name ${path === '' ? 'active': ''}`}>
-                    <a href="/">Getting started</a>
+                    <Link href="/">Getting started</Link>
+                  </li>
+                  <li className={`bui-react-docs-component-name ${path === 'theming' ? 'active': ''}`}>
+                    <Link href="/theming">Theming</Link>
                   </li>
                     {components.map(name => (
                         <li
@@ -20,7 +25,7 @@ const Navigation = ({ components, path }) => {
                           className={
                             `bui-react-docs-component-name ${path === name.toLowerCase() ? 'active': ''}`
                           }>
-                            <a href={`/${name.toLowerCase()}`}>{name}</a>
+                            <Link href={`/${name.toLowerCase()}`}>{name}</Link>
                         </li>
                     ))}
                 </ul>
@@ -30,7 +35,9 @@ const Navigation = ({ components, path }) => {
 };
 
 Navigation.propTypes = {
-    path: PropTypes.string,
+    location: PropTypes.shape({
+        path: PropTypes.string
+    }),
     components: PropTypes.array.isRequired
 };
 

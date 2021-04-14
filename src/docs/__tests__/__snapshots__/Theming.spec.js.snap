@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOCS: Back Snapshot Test renders the theming page 1`] = `
+<div>
+  <h2>
+    Theming
+  </h2>
+</div>
+`;

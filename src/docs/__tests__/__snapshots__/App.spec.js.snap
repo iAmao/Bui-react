@@ -2,15 +2,82 @@
 
 exports[`DOCS: App Snapshot Test renders 404 page if a valid route is not found 1`] = `
 <div
-  id="bui-react-docs-component-not-found"
+  className="row"
 >
-  <h3>
-    404!
-  </h3>
+  <div
+    className="col-md-2"
+    id="navigation-container"
+  >
+    <div>
+      <div
+        id="navigation-logo"
+      >
+        <h4>
+          bui React
+        </h4>
+      </div>
+      <div
+        id="navigation-items"
+      >
+        <ul
+          className="navigation"
+        >
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Getting started
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Theming
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Button
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Icon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-md-8"
+    id="details-container"
+  >
+    <div
+      id="bui-react-docs-component-not-found"
+    >
+      <h3>
+        404!
+      </h3>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`DOCS: App Snapshot Test renders the component page if a valid route is found 1`] = `
+exports[`DOCS: App Snapshot Test renders the "Component" page for url "/:id" 1`] = `
 <div
   className="row"
 >
@@ -33,10 +100,10 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
           className="navigation"
         >
           <li
-            className="bui-react-docs-component-name active"
+            className="bui-react-docs-component-name "
           >
             <a
-              href="/"
+              onClick={[Function]}
             >
               Getting started
             </a>
@@ -45,7 +112,16 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
             className="bui-react-docs-component-name "
           >
             <a
-              href="/button"
+              onClick={[Function]}
+            >
+              Theming
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name active"
+          >
+            <a
+              onClick={[Function]}
             >
               Button
             </a>
@@ -54,7 +130,7 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
             className="bui-react-docs-component-name "
           >
             <a
-              href="/icon"
+              onClick={[Function]}
             >
               Icon
             </a>
@@ -634,6 +710,156 @@ exports[`DOCS: App Snapshot Test renders the component page if a valid route is 
           </tbody>
         </table>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DOCS: App Snapshot Test renders the "Getting Started" page for url "/" 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-2"
+    id="navigation-container"
+  >
+    <div>
+      <div
+        id="navigation-logo"
+      >
+        <h4>
+          bui React
+        </h4>
+      </div>
+      <div
+        id="navigation-items"
+      >
+        <ul
+          className="navigation"
+        >
+          <li
+            className="bui-react-docs-component-name active"
+          >
+            <a
+              onClick={[Function]}
+            >
+              Getting started
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Theming
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Button
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Icon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-md-8"
+    id="details-container"
+  >
+    <div>
+      <h2>
+        Get Started
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DOCS: App Snapshot Test renders the "Theming" page for url "/theming" 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-2"
+    id="navigation-container"
+  >
+    <div>
+      <div
+        id="navigation-logo"
+      >
+        <h4>
+          bui React
+        </h4>
+      </div>
+      <div
+        id="navigation-items"
+      >
+        <ul
+          className="navigation"
+        >
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Getting started
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name active"
+          >
+            <a
+              onClick={[Function]}
+            >
+              Theming
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Button
+            </a>
+          </li>
+          <li
+            className="bui-react-docs-component-name "
+          >
+            <a
+              onClick={[Function]}
+            >
+              Icon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-md-8"
+    id="details-container"
+  >
+    <div>
+      <h2>
+        Theming
+      </h2>
     </div>
   </div>
 </div>

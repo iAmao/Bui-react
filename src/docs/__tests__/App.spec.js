@@ -10,12 +10,25 @@ import App from '../App';
 describe('DOCS: App', () => {
 
     describe('Snapshot Test', () => {
-        it('renders the component page if a valid route is found', () => {
+        it('renders the "Getting Started" page for url "/"', () => {
+            const tree = renderer.create(<App />).toJSON();
+            expect(tree).toMatchSnapshot();
+        });
+
+        it('renders the "Theming" page for url "/theming"', () => {
+            window.history.pushState(null, '', '/theming')
+            const tree = renderer.create(<App />).toJSON();
+            expect(tree).toMatchSnapshot();
+        });
+
+        it('renders the "Component" page for url "/:id"', () => {
+            window.history.pushState(null, '', '/button')
             const tree = renderer.create(<App />).toJSON();
             expect(tree).toMatchSnapshot();
         });
 
         it('renders 404 page if a valid route is not found', () => {
+            window.history.pushState(null, '', '/onlyone')
             const tree = renderer.create(<App location="lol" />).toJSON();
             expect(tree).toMatchSnapshot();
         });
@@ -29,7 +42,8 @@ describe('DOCS: App', () => {
         });
 
         it('renders not found page on non-existent components', () => {
-            const wrapper = mount(<App location='abc' />);
+            window.history.pushState(null, '', '/random/page')
+            const wrapper = mount(<App />);
 
             expect(wrapper.find({ id: 'bui-react-docs-component-not-found' })).toHaveLength(1);
             expect(wrapper.find({ id: 'bui-react-docs-component-not-found' }).children().text()).toEqual('404!');

@@ -19,7 +19,7 @@ exports[`DOCS: Navigation Snapshot Test renders navigation woth a list of props 
         className="bui-react-docs-component-name active"
       >
         <a
-          href="/"
+          onClick={[Function]}
         >
           Getting started
         </a>
@@ -28,7 +28,16 @@ exports[`DOCS: Navigation Snapshot Test renders navigation woth a list of props 
         className="bui-react-docs-component-name "
       >
         <a
-          href="/button"
+          onClick={[Function]}
+        >
+          Theming
+        </a>
+      </li>
+      <li
+        className="bui-react-docs-component-name "
+      >
+        <a
+          onClick={[Function]}
         >
           Button
         </a>
@@ -37,7 +46,7 @@ exports[`DOCS: Navigation Snapshot Test renders navigation woth a list of props 
         className="bui-react-docs-component-name "
       >
         <a
-          href="/icon"
+          onClick={[Function]}
         >
           Icon
         </a>
