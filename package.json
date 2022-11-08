@@ -139,7 +139,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "js-yaml": "^3.10.0",
-    "loader-utils": "^1.1.0",
+    "loader-utils": "^1.4.1",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.0.2",
     "object-assign": "4.1.1",
